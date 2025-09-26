@@ -2,8 +2,8 @@
 
 <p align="center">#  Filament Project Management
 
-![image](https://raw.githubusercontent.com/h4ndy/pnfilamentt/refs/heads/main/page1.png)
-![image](https://raw.githubusercontent.com/h4ndy/pnfilamentt/refs/heads/main/page2.png)
+![image](https://github.com/h4ndy/pnfilament/blob/main/page1.png)
+![image](https://github.com/h4ndy/pnfilament/blob/main/page2.png)
 
 
 A Laravel Filament 3 application for managing projects and task
