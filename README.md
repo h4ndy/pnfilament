@@ -2,9 +2,9 @@
 
 <p align="center">#  Filament Project Management
 
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-1.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-4.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-5.jpeg)
+![image](https://raw.githubusercontent.com/h4ndy/pnfilamentt/refs/heads/main/page1.png)
+![image](https://raw.githubusercontent.com/h4ndy/pnfilamentt/refs/heads/main/page2.png)
+
 
 A Laravel Filament 3 application for managing projects and task
 
@@ -22,19 +22,13 @@ A Laravel Filament 3 application for managing projects and task
 - Filament V4
 - Composer
 
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-2.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-6.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-7.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-8.jpeg)
-![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-9.jpeg)
-
 
 ## Installation
 
 1. Clone the repository:
    ```
-   git clone https://github.com/SeptiawanAjiP/dewakoding-project-management
-   cd dewakoding-project-management
+   git clone https://github.com/h4ndy/pnfilament
+   cd pmfilament
    ```
 
 2. Install dependencies:
@@ -54,7 +48,7 @@ A Laravel Filament 3 application for managing projects and task
    DB_CONNECTION=mysql
    DB_HOST=127.0.0.1
    DB_PORT=3306
-   DB_DATABASE=dewakoding_project_management
+   DB_DATABASE=pmfilament
    DB_USERNAME=root
    DB_PASSWORD=
    ```
