@@ -1,6 +1,106 @@
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
-<p align="center">
+<p align="center">#  Filament Project Management
+
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-1.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-4.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-5.jpeg)
+
+A Laravel Filament 3 application for managing projects and task
+
+## Features
+
+- Project management with tasks
+- Role-based access control (using Filament Shield)
+- Management with role assignments
+
+## Requirements
+
+- PHP > 8.2+
+- Laravel 12
+- MySQL 8.0+ / PostgreSQL 12+
+- Filament V4
+- Composer
+
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-2.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-6.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-7.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-8.jpeg)
+![image](https://raw.githubusercontent.com/SeptiawanAjiP/dewakoding-project-management/refs/heads/main/image-9.jpeg)
+
+
+## Installation
+
+1. Clone the repository:
+   ```
+   git clone https://github.com/SeptiawanAjiP/dewakoding-project-management
+   cd dewakoding-project-management
+   ```
+
+2. Install dependencies:
+   ```
+   composer install
+   npm install
+   ```
+
+3. Set up environment:
+   ```
+   cp .env.example .env
+   php artisan key:generate
+   ```
+
+4. Configure database in `.env` file:
+   ```
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=dewakoding_project_management
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+
+5. Run migrations:
+   ```
+   php artisan migrate
+   ```
+
+6. Create storage link for file uploads
+   ```
+   php artisan storage:link
+   ```
+
+7. Create a Filament admin user:
+   ```
+   php artisan make:filament-user
+   ```
+8. Activate Role & Permission
+   ```
+   php artisan shield:setup
+   php artisan shield:install
+   php artisan shield:super-admin
+   ```
+
+9. Start the development server:
+   ```
+   php artisan serve
+   ```
+
+## Usage
+
+1. Access the Filament admin panel at `http://localhost:8000/admin`
+2. Log in with the Filament user credentials you created
+4. Add team members to the project
+5. Create and customize project and Tasks
+
+## Main Features
+
+
+
+
+
+## License
+
+This project is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 <a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
