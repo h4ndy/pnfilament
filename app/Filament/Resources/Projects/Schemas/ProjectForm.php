@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Filament\Resources\Projects\Schemas;
+
+use Filament\Forms\Components\DateTimePicker;
+use Filament\Forms\Components\FileUpload;
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
+use Filament\Schemas\Schema;
+
+class ProjectForm
+{
+    public static function configure(Schema $schema): Schema
+    {
+        return $schema
+            ->components([
+                TextInput::make('name')
+                    ->required(),
+                TextInput::make('code'),
+                Textarea::make('description')
+                    ->columnSpanFull(),
+                DateTimePicker::make('start_date'),
+                DateTimePicker::make('end_date'),
+                FileUpload::make('image_path')
+                    ->image(),
+                Select::make('status')
+                    ->options(ProjectStatus::toArray())
+                    ->default('pending')
+                    ->required(),
+                Select::make('client_id')
+                    ->relationship('client', 'name')
+                    ->required(),
+                Select::make('category_id')
+                     ->relationship('category', 'name')
+                    ->required(),
+                TextInput::make('created_by')
+                    ->numeric(),
+                TextInput::make('updated_by')
+                    ->numeric(),
+                TextInput::make('deleted_by')
+                    ->numeric(),
+            ]);
+    }
+}
