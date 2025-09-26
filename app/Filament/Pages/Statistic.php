@@ -2,11 +2,13 @@
 
 namespace App\Filament\Pages;
 
-use App\Filament\Widgets\RecentProjects;
-use App\Filament\Widgets\RecentTasks;
 use BackedEnum;
 use Filament\Pages\Dashboard;
 use Filament\Facades\Filament;
+use App\Filament\Widgets\TaskChart;
+use App\Filament\Widgets\RecentTasks;
+use App\Filament\Widgets\ProjectChart;
+use App\Filament\Widgets\RecentProjects;
 use App\Filament\Widgets\SystemOverview;
 
 class Statistic extends Dashboard
@@ -22,7 +24,9 @@ class Statistic extends Dashboard
         return [
             SystemOverview::class,
             RecentProjects::class,
-            RecentTasks::class,   
+            RecentTasks::class,
+            ProjectChart::class,
+            TaskChart::class
         ];
     }
     public static function canAccess(): bool
